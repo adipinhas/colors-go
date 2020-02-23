@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Colus-Regular
+font link: https://www.fontfabric.com/colus/
+font author: Stan Partalev
+font author site: http://www.fontfabric.com/
+Slogan Font: Fanwood Text.otf
+
+icon designer: useiconic.com
+icon designer link: /useiconic.com
+        
+{"bg":"#EBE2F2","icon-gradient-0":"#4B279B","icon-gradient-1":"#DF99D8","font":"#2B1C36","slogan":"#3f304a"}
+      
