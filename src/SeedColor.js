@@ -30,7 +30,7 @@ import uuid from 'uuid'
         id: "flat-ui-colors-aussie",
         emoji: "",
         colors: [
-          { name: "Beekeeper", color: "#f6e58d",id:uuid() },
+          { name: "Beekeeper", color: "#f3e58d",id:uuid() },
           { name: "SpicedNectarine", color: "#ffbe76",id:uuid() },
           { name: "PinkGlamour", color: "#ff7979" ,id:uuid() },
           { name: "DeepCove", color: "#130f40" ,id:uuid() },
