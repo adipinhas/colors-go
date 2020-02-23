@@ -1,5 +1,5 @@
 {
-  "homepage": "http//adipinhas.guthub.io/color-palette",
+  "homepage": "https//adipinhas.guthub.io/color-palette",
   "name": "color-start",
   "version": "0.1.0",
   "private": true,
@@ -21,8 +21,8 @@
     "uuid": "^3.4.0"
   },
   "scripts": {
-    "predeploy": "npm rin build",
-    "deploy": "github-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
