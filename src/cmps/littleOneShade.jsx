@@ -7,6 +7,7 @@ export default class littleOneShade extends Component {
 
     handleUpdate=()=>{
         this.props.colorUpdate(this.props.color)
+        console.log('n')
     }
     render() {
         const isDark= chroma(this.props.color).luminance()<0.25
