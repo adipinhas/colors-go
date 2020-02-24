@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 import img from '../img/cool.png'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 
+
 export default class palette extends Component {
 state={
     shadeLevel:500,
