@@ -17,7 +17,7 @@ import uuid from 'uuid'
         colors: [
           { name: "red", color: "rgb(65,93,155)",id:uuid() },
           { name: "pink", color: "#E91E63",id:uuid() },
-          { name: "purple", color: "#9C27B0",id:uuid() },
+          { name: "purple", color: "#9C22B0",id:uuid() },
           { name: "deeppurple", color: "#673AB7",id:uuid() },
           { name: "indigo", color: "#3F51B5" ,id:uuid() },
         ]
