@@ -81,16 +81,14 @@ export default class CreatePalette extends Component {
             palette:{...this.state.palette,emoji:emoji},
             isSelectingEmoji:!this.state.isSelectingEmoji
         })
-        console.log(e.native)
     }
     handleFocus=(evt)=>{
         evt.target.select()
     }
 
     render() { 
+        const emoji= this.state.palette.emoji
         const isSelectingEmoji=this.state.isSelectingEmoji
-        console.log(this.state,'pkpk')
-      
         const colorsSampels= this.state.palette.colors.map((color,i)=>{
             return <ColorSample id={color.id} key={color.id} deleteColor={this.deleteColor} saveColor={this.saveColor} colorDetails={color} index={i}/>
         });
@@ -103,7 +101,7 @@ export default class CreatePalette extends Component {
                 </Link>
                <form className="create-form" onSubmit={this.handleSubmit}>
               
-                   <input
+                   <input className="input-name"
                    onFocus={this.handleFocus}
                    placeholder="Palette name"
                    id="paletteName"
@@ -111,12 +109,12 @@ export default class CreatePalette extends Component {
                    value={this.state.palette.paletteName}
                    onChange={this.handleChange}
                    />
-                   <div onClick={this.toggleSelect}>pick emoji</div>
+                   <div className="pick-emoji" onClick={this.toggleSelect}>pick emoji{` ${emoji}`}</div>
                    <div className={`emoji-picker-container ${isSelectingEmoji && 'show-emoji-modal'}` }>
                     <Picker onSelect={this.selectEmoji}/> 
                    </div>
                   
-                   <button type="submit" >save</button>
+                   <button className="save-palette" type="submit" >save</button>
                </form>
                <div className="color-sampels-container">
                   {colorsSampels}

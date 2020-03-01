@@ -12,7 +12,7 @@ a{
   color: rgb(39, 39, 39);
 }
 .main{
-  height: 70vh;
+  height: 100vh;
 }
 .shade{
   display: flex;
@@ -128,6 +128,7 @@ a{
 
 background-color: rgba(241, 241, 241, 0.63);
 display: flex;
+align-items: center;
 justify-content: space-between;
 width: 100%;
   margin-right: 0;
@@ -143,12 +144,41 @@ width: 100%;
 .logo-img{
   border-radius: 50%;
 
+}.save-palette{
+  background-color: #e7dac5;
+    padding: 10px;
+    border-radius: 5px;
+    border: unset;
+    font-family:  'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: unset;
+    transition: all 0.25s;
+    
+}
+.save-palette:hover{
+  background-color: rgb(0, 139, 46);
+  color: aliceblue;
+  cursor: pointer;
 }
 .create-form{
   padding:20px ;
   background-color: rgba(143, 143, 143, 0.699);
   display: flex;
   justify-content: space-around;
+}
+.pick-emoji{
+  background-color: #e8d5bc;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+.pick-emoji:hover{
+  background-color: rgb(252, 246, 213);
+  cursor: pointer;
+}
+.input-name{
+  padding: 5px;
+  border: unset;
+  border-radius: 5px;
 }
 .emoji-picker-container{
   display: flex;
@@ -183,7 +213,9 @@ width: 100%;
   align-items: center;
 }
 .add-color{
-  background-color: rgba(184, 184, 184, 0.281);
+  background-color:#e8d5bc;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: unset;
   border: unset;
   border-radius: 5px;
   height: 60px;
@@ -223,6 +255,7 @@ width: 100%;
   position: relative;
   /* cursor: pointer; */
   width: 100%;
+  height: 103%;
   margin: 0 auto;
 }
 .little-one-shade{
@@ -257,4 +290,24 @@ width: 100%;
     border-radius: 4px;
     opacity: 1;
 
+}
+.copied-message{
+  z-index: -30;
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  background-color: rgb(46, 46, 48);
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 15px;
+  transition: all 1s;
+}
+.copied-message.showing{
+  z-index: 30;
+  top: 12%;
+}
+.footer{
+  background-color: rgba(34, 34, 34, 0.137);
 }

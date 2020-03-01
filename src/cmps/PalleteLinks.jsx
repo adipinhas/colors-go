@@ -9,7 +9,7 @@ export default class PalleteLinks extends Component {
     
     render() {
         const createLink = <Link className="link create-link" to="/create">
-            create palette =>
+            Create Palette
         </Link>
       
         const links=this.props.list.map((palette)=>{

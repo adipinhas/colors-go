@@ -3,6 +3,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard'
 // ?import { useHistory } from "react-router-dom";
 import chroma from 'chroma-js'
 import LittleShades from './LittleShades'
+import Copied from './Copied'
 
 
 import '../style/ColorBox.css'
@@ -14,6 +15,7 @@ export default class ColorBox extends Component {
     state={
         isCopied:false,
         showingMoreShades:false,
+        isPopup:false
         
 
     }
@@ -27,12 +29,7 @@ export default class ColorBox extends Component {
             })
         },900)
     }
-    // clickMore=(e)=>{
-    //     e.stopPropagation()
-    //     this.props.history.push('/')
-        
-
-    // }
+  
     showLittleShades=(evt)=>{
         evt.stopPropagation()
         this.setState({
@@ -40,10 +37,19 @@ export default class ColorBox extends Component {
         })
     }
     updateColor=(color)=>{
+        
         this.setState({
-            color:color,
-            showingMoreShades:false
+            showingMoreShades:false,
+            isPopup:true
         })
+        setTimeout(()=>{
+            this.setState({
+                isPopup:false
+            })
+        },3000)
+           
+     
+
     }
    
     render() {
@@ -72,10 +78,10 @@ export default class ColorBox extends Component {
                    </div>
                </div>
                     <button className="little-shades-button" onClick={this.showLittleShades}>!more!</button>
-              
                
             </div>
             </CopyToClipboard>}
+            <Copied isPopup={this.state.isPopup}></Copied>
             </>
         )
     }
